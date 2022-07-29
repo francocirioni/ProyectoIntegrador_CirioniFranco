@@ -3,3 +3,9 @@
 2_ debo bajar el node js ,abro cmd y escribo:
 
 npm install -g @angular/cli
+
+ESTA 2
+
+3-para crear el servidor de angular ng serve, es dentro de la carpeta del angular y sae hace con el cmd
+
+para crear el componente, ng generate component componentes/header
