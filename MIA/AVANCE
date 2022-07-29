@@ -1,1 +1,5 @@
 1 listo
+
+2_ debo bajar el node js ,abro cmd y escribo:
+
+npm install -g @angular/cli
