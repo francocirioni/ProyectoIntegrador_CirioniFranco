@@ -3,3 +3,22 @@
     padding: 20px;
 }
 
+div {background-color: aqua;
+text-align: center;
+
+}
+
+#nombre {
+    font-weight: bold;
+    margin-top: 4%;
+  
+}
+
+#acercade{
+    margin-top: 10px;
+    font-weight: bold;
+    
+  
+}
+
+

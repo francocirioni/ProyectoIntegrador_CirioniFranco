@@ -9,6 +9,7 @@ import { RedesComponent } from './componentes/redes/redes.component';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { AboutmeComponent } from './componentes/aboutme/aboutme.component';
 import { AcercadeComponent } from './componentes/acercade/acercade.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AcercadeComponent } from './componentes/acercade/acercade.component';
     RedesComponent,
     BannerComponent,
     AboutmeComponent,
-    AcercadeComponent
+    AcercadeComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
