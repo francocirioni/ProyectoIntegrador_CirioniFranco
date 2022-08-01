@@ -10,6 +10,8 @@ import { BannerComponent } from './componentes/banner/banner.component';
 import { AboutmeComponent } from './componentes/aboutme/aboutme.component';
 import { AcercadeComponent } from './componentes/acercade/acercade.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
+import { ExpComponent } from './componentes/exp/exp.component';
+import { EducaComponent } from './componentes/educa/educa.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PerfilComponent } from './componentes/perfil/perfil.component';
     BannerComponent,
     AboutmeComponent,
     AcercadeComponent,
-    PerfilComponent
+    PerfilComponent,
+    ExpComponent,
+    EducaComponent
   ],
   imports: [
     BrowserModule,
