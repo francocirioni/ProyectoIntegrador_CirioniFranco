@@ -1,3 +1,33 @@
+.contenedor1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{ margin-right: 10px;}
+
 #logoap{
     width: 150px;
     }
+
+ img {
+        width: 40px;
+       
+   }
+
+
+   @media (max-width:575px){
+   .contenedor1 {
+    flex-direction: column;
+   }
+   .social img{margin: 2px}
+
+   .social{display: flex;
+flex-direction: column;
+align-items: center;}
+
+}
+
+
+
+.social img {margin: 5px;}
