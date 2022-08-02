@@ -1,0 +1,42 @@
+.row{
+    padding: 20px;
+    background-color: azure;
+    text-align: center;
+}
+
+.contenedor {
+        width: auto;
+
+}
+.parte1, .parte2 {
+    display: inline-block;
+    text-align: justify;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+color:#343434 ;
+
+
+
+}
+
+.parte2{padding-bottom: 20px;
+;}
+
+.imgproyecto {
+
+    box-shadow: 5px 5px 10px black;
+    text-align: center  ;
+
+
+}
+
+#titulo {
+    text-align: center;
+padding-top: 20px;
+font-family: 'Courier New', Courier, monospace;
+color:#343434 ;
+
+    
+
+
+}

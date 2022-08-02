@@ -14,6 +14,8 @@ import { ExpComponent } from './componentes/exp/exp.component';
 import { EducaComponent } from './componentes/educa/educa.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { Hys2Component } from './componentes/hys2/hys2.component';
+import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { FootComponent } from './componentes/foot/foot.component';
 
 
 
@@ -29,7 +31,9 @@ import { Hys2Component } from './componentes/hys2/hys2.component';
     PerfilComponent,
     ExpComponent,
     EducaComponent,
-    Hys2Component
+    Hys2Component,
+    ProyectosComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule,
