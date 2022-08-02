@@ -3,20 +3,23 @@
     padding: 20px;
 }
 
-div {background-color: aqua;
+div {background-color: #343434;
 text-align: center;
+font-family: 'Courier New', Courier, monospace;
+color:#F5F6F8;
+font-size: medium;
 
 }
 
 #nombre {
-    font-weight: bold;
+    font-weight: ;
     margin-top: 4%;
   
 }
 
 #acercade{
     margin-top: 10px;
-    font-weight: bold;
+    font-weight: ;
     
   
 }

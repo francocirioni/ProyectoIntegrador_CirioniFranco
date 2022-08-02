@@ -12,6 +12,10 @@ import { AcercadeComponent } from './componentes/acercade/acercade.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { ExpComponent } from './componentes/exp/exp.component';
 import { EducaComponent } from './componentes/educa/educa.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { Hys2Component } from './componentes/hys2/hys2.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,11 +28,13 @@ import { EducaComponent } from './componentes/educa/educa.component';
     AcercadeComponent,
     PerfilComponent,
     ExpComponent,
-    EducaComponent
+    EducaComponent,
+    Hys2Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
