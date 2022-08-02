@@ -1,7 +1,7 @@
 .titulo {text-align: center;
     padding-top: 20px;
     font-family: 'Courier New', Courier, monospace;
-    color:#F5F6F8;
+    color:#343434;
     }
 
 
@@ -26,6 +26,6 @@
 
 .maestro {
     
-    background-color: #343434;
+    background-color: ##F5F6F8;
     padding-bottom: 40px;
 }

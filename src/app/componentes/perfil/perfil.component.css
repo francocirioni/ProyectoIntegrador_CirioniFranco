@@ -1,5 +1,6 @@
 div {
    text-align: center;
-   background-color: #F5F6F8;
+   background-image: linear-gradient(to top , #343434 10% , #F5F6F8 90%)
    }
 
+background-color: #F5F6F8;
