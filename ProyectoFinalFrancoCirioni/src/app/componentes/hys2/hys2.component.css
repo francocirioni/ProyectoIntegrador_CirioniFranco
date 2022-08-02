@@ -1,6 +1,31 @@
+.titulo {text-align: center;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color:#F5F6F8;
+    }
+
+
+
 .row {
     
+    
+    text-align: center;
+    padding-top: 20px;
+
+
+}
+
+#cir {
+
+    padding-top:40px ;
+
+
+
+}
+
+
+.maestro {
+    
     background-color: #343434;
-
-
+    padding-bottom: 40px;
 }
