@@ -11,6 +11,7 @@
     
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 60px;
 
 
 }
@@ -25,7 +26,9 @@
 
 
 .maestro {
-    
-    background-color: ##F5F6F8;
-    padding-bottom: 40px;
-}
+      
+   background-color: ##F5F6F8;
+   
+  
+} 
+
