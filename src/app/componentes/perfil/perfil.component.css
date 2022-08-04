@@ -1,5 +1,11 @@
 div {
    text-align: center;
+
    background-image: linear-gradient(to top , #343434 10% , #F5F6F8 90%)
    }
 
+
+#perfil {
+
+   height: 418px;
+}
