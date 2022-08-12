@@ -16,6 +16,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { Hys2Component } from './componentes/hys2/hys2.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { FootComponent } from './componentes/foot/foot.component';
+import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 
 
@@ -33,12 +36,15 @@ import { FootComponent } from './componentes/foot/foot.component';
     EducaComponent,
     Hys2Component,
     ProyectosComponent,
-    FootComponent
+    FootComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
