@@ -19,6 +19,7 @@ import { FootComponent } from './componentes/foot/foot.component';
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -39,12 +40,14 @@ import { LoginComponent } from './componentes/login/login.component';
     FootComponent,
     HomeComponent,
     LoginComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
