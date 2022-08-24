@@ -22,6 +22,8 @@ import { LoginComponent } from './componentes/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { NewExperienciaComponent } from './componentes/exp/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/exp/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/educa/neweducacion.component';
+import { EditeducacionComponent } from './componentes/educa/editeducacion.component';
 
 
 
@@ -43,7 +45,9 @@ import { EditExperienciaComponent } from './componentes/exp/edit-experiencia.com
     HomeComponent,
     LoginComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent
 
   ],
   imports: [
