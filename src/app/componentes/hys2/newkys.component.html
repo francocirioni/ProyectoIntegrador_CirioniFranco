@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Nombre de la institucion</label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion de sus estudios</label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE2">Descripcion de sus estudios</label>
+                    <input type="text" class="form-control" id="descripcionE2" name="descripcionE2" [(ngModel)]="descripcionE2" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE3">Descripcion de sus estudios</label>
+                    <input type="text" class="form-control" id="descripcionE3" name="descripcionE3" [(ngModel)]="descripcionE3" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE4">Descripcion de sus estudios</label>
+                    <input type="text" class="form-control" id="descripcionE4" name="descripcionE4" [(ngModel)]="descripcionE4" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE5">Descripcion de sus estudios</label>
+                    <input type="text" class="form-control" id="descripcionE5" name="descripcionE5" [(ngModel)]="descripcionE5" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE5">Descripcion de sus estudios</label>
+                    <input type="text" class="form-control" id="descripcionE6" name="descripcionE6" [(ngModel)]="descripcionE5" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar educacion
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

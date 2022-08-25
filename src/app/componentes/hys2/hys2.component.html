@@ -2,129 +2,101 @@
 
 
 
-<div class="row">
+  <div class="row">
 
-  <div class="titulo">
+    <div class="titulo">
 
-    <h1 class="titulo"> Hard y Soft Skils </h1>
-  
+      <h1 class="titulo"> Hard y Soft Skils </h1>
+
+      <button type="button" class="btn btn-dark" routerLink="/nuevakys" *ngIf="isLogged">
+        Agregar
+      </button>
+
+        <div *ngIf="isLogged">
+        <div *ngFor="let Kys of kys">
+          <button class="btn btn-danger" (click)="delete(Kys.id)">
+            <i class="bi bi-trash-fill"></i> BORRAR</button>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
+
+
+      <circle-progress [percent]="0"
+       [radius]="100" [imageSrc]="'../../../assets/4.png'"
+        [showImage]="true"
+        [imageHeight]="50"
+         [imageWidth]="50"
+          [outerStrokeWidth]="12"
+           [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'"
+         [innerStrokeColor]="'#DC8924'"
+          [animation]="true"
+           [animationDuration]="1000">
+      </circle-progress>
+    </div>
+
+
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
+      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/1.png'" [showImage]="true"
+        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+      </circle-progress>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
+      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/5.png'" [showImage]="true"
+        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+      </circle-progress>
+
+    </div>
+
   </div>
-  
-
-
-<div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-  <circle-progress
-  [percent]="85"
-  [radius]="100"
-  [imageSrc]="'../../../assets/4.png'"
-  [showImage]="true"
-  [imageHeight]="50"
-  [imageWidth]="50"
-  [outerStrokeWidth]="12"
-  [innerStrokeWidth]="2"
-  [outerStrokeColor]="'#DC8924'"
-  [innerStrokeColor]="'#DC8924'"
-  [animation]="true"
-  [animationDuration]="1000"
-></circle-progress>
-</div>
-
-
-<div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-  <circle-progress
-  [percent]="85"
-  [radius]="100"
-  [imageSrc]="'../../../assets/1.png'"
-  [showImage]="true"
-  [imageHeight]="50"
-  [imageWidth]="50"
-  [outerStrokeWidth]="12"
-  [innerStrokeWidth]="2"
-  [outerStrokeColor]="'#DC8924'"
-  [innerStrokeColor]="'#DC8924'"
-  [animation]="true"
-  [animationDuration]="1000"
-></circle-progress>
-</div>
-
-<div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-  <circle-progress
-  [percent]="85"
-  [radius]="100"
-  [imageSrc]="'../../../assets/5.png'"
-  [showImage]="true"
-  [imageHeight]="50"
-  [imageWidth]="50"
-  [outerStrokeWidth]="12"
-  [innerStrokeWidth]="2"
-  [outerStrokeColor]="'#DC8924'"
-  [innerStrokeColor]="'#DC8924'"
-  [animation]="true"
-  [animationDuration]="1000"
-></circle-progress>
-
-</div>
-
-</div>
 
 
 
 
-<div class="row">
+  <div class="row">
 
-  <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-    <circle-progress
-    [percent]="85"
-    [radius]="100"
-    [imageSrc]="'../../../assets/3.png'"
-    [showImage]="true"
-    [imageHeight]="50"
-    [imageWidth]="50"
-    [outerStrokeWidth]="12"
-    [innerStrokeWidth]="2"
-    [outerStrokeColor]="'#DC8924'"
-    [innerStrokeColor]="'#DC8924'"
-    [animation]="true"
-    [animationDuration]="1000"
-  ></circle-progress>
-  </div>
-  
-  
-  <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-    <circle-progress
-    [percent]="85"
-    [radius]="100"
-    [imageSrc]="'../../../assets/6.png'"
-    [showImage]="true"
-    [imageHeight]="50"
-    [imageWidth]="50"
-    [outerStrokeWidth]="12"
-    [innerStrokeWidth]="2"
-    [outerStrokeColor]="'#DC8924'"
-    [innerStrokeColor]="'#DC8924'"
-    [animation]="true"
-    [animationDuration]="1000"
-  ></circle-progress>
-  </div>
-  
-  <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-    <circle-progress
-    [percent]="85"
-    [radius]="100"
-    [imageSrc]="'../../../assets/2.png'"
-    [showImage]="true"
-    [imageHeight]="50"
-    [imageWidth]="50"
-    [outerStrokeWidth]="12"
-    [innerStrokeWidth]="2"
-    [outerStrokeColor]="'#DC8924'"
-    [innerStrokeColor]="'#DC8924'"
-    [animation]="true"
-    [animationDuration]="1000"
-  ></circle-progress>
-  
-  </div>
-  
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
+      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/3.png'" [showImage]="true"
+        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+      </circle-progress>
+    </div>
+
+
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
+      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/6.png'" [showImage]="true"
+        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+      </circle-progress>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
+      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/2.png'" [showImage]="true"
+        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+      </circle-progress>
+
+    </div>
+
   </div>
 
 

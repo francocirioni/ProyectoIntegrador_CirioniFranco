@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Hys2Component } from './hys2.component';
+import { EditkysComponent } from './editkys.component';
 
-describe('Hys2Component', () => {
-  let component: Hys2Component;
-  let fixture: ComponentFixture<Hys2Component>;
+describe('EditkysComponent', () => {
+  let component: EditkysComponent;
+  let fixture: ComponentFixture<EditkysComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Hys2Component ]
+      declarations: [ EditkysComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Hys2Component);
+    fixture = TestBed.createComponent(EditkysComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
