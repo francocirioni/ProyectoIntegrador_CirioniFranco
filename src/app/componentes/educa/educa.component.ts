@@ -8,6 +8,8 @@ import { TokenService } from 'src/app/service/token.service';
   templateUrl: './educa.component.html',
   styleUrls: ['./educa.component.css']
 })
+
+
 export class EducaComponent implements OnInit {
 
   educacion: Educacion[] = [];
