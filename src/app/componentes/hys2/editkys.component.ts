@@ -8,12 +8,14 @@ import { KysService } from 'src/app/service/kys.service';
   templateUrl: './editkys.component.html',
   styleUrls: ['./editkys.component.css']
 })
+
 export class EditkysComponent implements OnInit {
-
   kys: Kys = null;
-
+  
   constructor(
-    private kysS: KysService,private activatedRouter : ActivatedRoute,private router: Router
+    private kysS: KysService,
+    private activatedRouter : ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -39,5 +41,4 @@ export class EditkysComponent implements OnInit {
       }
     )
   }
-
 }

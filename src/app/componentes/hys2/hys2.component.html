@@ -8,11 +8,17 @@
 
       <h1 class="titulo"> Hard y Soft Skils </h1>
 
+      <div *ngFor="let Kys of kys" ><h1>Mi mejor cualidad es {{Kys.nombreE}}</h1></div>
+
       <button type="button" class="btn btn-dark" routerLink="/nuevakys" *ngIf="isLogged">
         Agregar
       </button>
 
-        <div *ngIf="isLogged">
+
+
+
+
+      <div *ngIf="isLogged">
         <div *ngFor="let Kys of kys">
           <button class="btn btn-danger" (click)="delete(Kys.id)">
             <i class="bi bi-trash-fill"></i> BORRAR</button>
@@ -28,34 +34,26 @@
 
 
 
-
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" >
-
-
-      <circle-progress [percent]="50"
-       [radius]="100" [imageSrc]="'../../../assets/4.png'"
-        [showImage]="true"
-        [imageHeight]="50"
-         [imageWidth]="50"
-          [outerStrokeWidth]="12"
-           [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#DC8924'"
-         [innerStrokeColor]="'#DC8924'"
-          [animation]="true"
-           [animationDuration]="1000">
-      </circle-progress>
-    </div>
+   
+      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
 
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/1.png'" [showImage]="true"
+        <circle-progress [percent]="Kys.descripcionE" [radius]="100" [imageSrc]="'../../../assets/4.png'"
+          [showImage]="true" [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
+          [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+        </circle-progress>
+      </div>
+    
+
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+      <circle-progress [percent]="Kys.descripcionE2" [radius]="100" [imageSrc]="'../../../assets/1.png'" [showImage]="true"
         [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
         [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
       </circle-progress>
     </div>
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/5.png'" [showImage]="true"
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+      <circle-progress [percent]="Kys.descripcionE3" [radius]="100" [imageSrc]="'../../../assets/5.png'" [showImage]="true"
         [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
         [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
       </circle-progress>
@@ -69,23 +67,23 @@
 
   <div class="row">
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/3.png'" [showImage]="true"
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+      <circle-progress [percent]="Kys.descripcionE4" [radius]="100" [imageSrc]="'../../../assets/3.png'" [showImage]="true"
         [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
         [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
       </circle-progress>
     </div>
 
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/6.png'" [showImage]="true"
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+      <circle-progress [percent]="Kys.descripcionE5" [radius]="100" [imageSrc]="'../../../assets/6.png'" [showImage]="true"
         [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
         [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
       </circle-progress>
     </div>
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir">
-      <circle-progress [percent]="85" [radius]="100" [imageSrc]="'../../../assets/2.png'" [showImage]="true"
+    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+      <circle-progress [percent]="Kys.descripcionE6" [radius]="100" [imageSrc]="'../../../assets/2.png'" [showImage]="true"
         [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
         [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
       </circle-progress>
