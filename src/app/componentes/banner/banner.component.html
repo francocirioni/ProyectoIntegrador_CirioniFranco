@@ -1,3 +1,16 @@
 <div>
-    <h1>Bienvenido Al Portfolio </h1>
+
+   
+    <h1 *ngIf="!isLogged" > Bienvenido al Portfolio de {{persona.nombre}} </h1>
+    <h1 *ngIf="isLogged" > {{persona.nombre}} Edite Su Portfolio</h1>
+
+
+   
+
+   
+
+
+   
+
+
 </div>

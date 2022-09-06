@@ -16,6 +16,7 @@ export class EducaComponent implements OnInit {
 
   constructor(private educacionS: EducacionService, private tokenService: TokenService) { }
   isLogged = false;
+  offLogged= true;
 
 
   ngOnInit(): void {

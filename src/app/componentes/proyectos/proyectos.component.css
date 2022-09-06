@@ -1,3 +1,7 @@
+#todo{text-align: center;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color:#F5F6F8;}
 .row{
     padding: 20px;
     background-color: #343434;
@@ -40,3 +44,11 @@ color:#F5F6F8 ;
 
 
 }
+
+#centrado {text-align: center;
+align-items: center;
+width: 100%;}
+
+.centrado {text-align: center;
+align-items: center;
+width: 100%;}
