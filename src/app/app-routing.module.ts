@@ -16,6 +16,7 @@ import { NewproyectosComponent } from './componentes/proyectos/newproyectos.comp
 
 
 import { EditkysComponent } from './componentes/hys2/editkys.component';
+import { NewfotoaComponent } from './componentes/perfil/newfotoa.component';
 
 
 
@@ -36,9 +37,10 @@ const routes: Routes = [
   { path: 'nuevapro', component: NewproyectosComponent },
 
   { path: 'nuevakys', component: NewkysComponent },
-  { path: 'editkys/:id', component: EditkysComponent }
+  { path: 'editkys/:id', component: EditkysComponent },
 
-
+  { path: 'nuevafotoa', component: NewfotoaComponent },
+ 
 
 
 

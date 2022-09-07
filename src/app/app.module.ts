@@ -28,6 +28,8 @@ import { NewproyectosComponent } from './componentes/proyectos/newproyectos.comp
 import { EditproyectosComponent } from './componentes/proyectos/editproyectos.component';
 import { NewkysComponent } from './componentes/hys2/newkys.component';
 import { EditkysComponent } from './componentes/hys2/editkys/editkys.component';
+import { NewfotoaComponent } from './componentes/perfil/newfotoa.component';
+import { EditfotoaComponent } from './componentes/perfil/editfotoa.component';
 
 
 
@@ -55,7 +57,9 @@ import { EditkysComponent } from './componentes/hys2/editkys/editkys.component';
     NewproyectosComponent,
     EditproyectosComponent,
     NewkysComponent,
-    EditkysComponent
+    EditkysComponent,
+    NewfotoaComponent,
+    EditfotoaComponent
 
   ],
   imports: [
