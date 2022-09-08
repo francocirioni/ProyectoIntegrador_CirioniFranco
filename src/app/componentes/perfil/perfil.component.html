@@ -1,46 +1,44 @@
 <div class="row">
 
-  
 
-                 <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+   
 
-                    <img src="../../../assets/perfil2.jpg" class="img-fluid" id="perfil">
-
-                    <div class="col-lg-2" class="centrado">
-                     <button type="button" class="btn btn-dark" routerLink="/nuevafotoa/" *ngIf="isLogged">
-                         Agregar Proyecto
-                     </button>
+    <div class="col-lg-2" class="centrado">
+        <button type="button" class="btn btn-dark" routerLink="/nuevafotoa/" *ngIf="isLogged">
+            Agregar Proyecto
+        </button>
 
 
-                     <div class="centrado">
-                        <div class="col lg 1"></div>
-                        <div class="col-lg-11">
-                            <table class="table">
-                                <tbody>
-                                    <tr *ngFor="let Fotoa of fotoa">
-                                        <td>
-                                            <h2>{{Fotoa.nombreE}}</h2>
+        <div *ngFor="let Fotoa of fotoa" >
+
+
+            <img src="{{Fotoa.nombreE}}" class="img-fluid" id="perfil">
+
+
+        </div>
+
+        <div *ngFor="let Fotoa of fotoa">
+            <div *ngIf="isLogged" > 
+
+                <button class="btn btn-light" routerLink="/editfotoa/{{Fotoa.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDITA</button>
+
+                    <button class="btn btn-danger" (click)="delete(Fotoa.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
                 
-                
-                                        </td>
-                                       
-                                        <td *ngIf="isLogged">
-                                            <button  class="btn btn-light" routerLink="/editpro/{{Fotoa.id}}">
-                                                <i class="bi bi-pencil-fill"></i> EDITA</button>
-                                        </td>
-                                        <td *ngIf="isLogged">
-                                            <button class="btn btn-danger" (click)="delete(Fotoa.id)">
-                                                <i class="bi bi-trash-fill"></i> BORRAR</button>
-                                        </td>
-                                    </tr>   
-                                </tbody>
-                            </table>
-                        </div>
-                
-                    </div>
-             
+            
+            </div>         
+
+         
+        </div>
 
 
-  
-                   
+        
+
+    </div>
+
+
+
+
+
 </div>

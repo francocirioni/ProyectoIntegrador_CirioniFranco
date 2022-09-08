@@ -1,4 +1,4 @@
-div {
+.row {
    text-align: center;
 
    background-image: linear-gradient(to top , #343434 10% , #F5F6F8 90%)
@@ -6,8 +6,13 @@ div {
 
 
 #perfil {
+   
+   
 
-   height: 418px;
+   height: 400px;
+  
+  
+ 
 }
 
 
