@@ -1,9 +1,9 @@
 .row {
    text-align: center;
 
-   background-image: linear-gradient(to top , #343434 10% , #F5F6F8 90%);
+   background-image: linear-gradient(to top , #343434 10%  , #F5F6F8 70%);
 
-   padding-bottom: 200px;
+   padding-bottom: 50px;
 
    
    }

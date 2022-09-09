@@ -1,5 +1,5 @@
 <div class="row">
-    <h1>PROYECTOS</h1>
+    <h1 id="titulo">PROYECTOS</h1>
     <div class="col-lg-2" class="centrado">
         <button type="button" class="btn btn-dark" routerLink="/nuevapro/" *ngIf="isLogged">
             Agregar Proyecto
@@ -10,8 +10,8 @@
 
 
     <div class="centrado">
-        <div class="col lg 1"></div>
-        <div class="col-lg-11">
+        
+        <div class="col-lg-12">
             <table class="table">
                 <tbody>
                     <tr *ngFor="let Proyectos of proyectos">
