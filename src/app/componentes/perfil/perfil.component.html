@@ -5,25 +5,17 @@
 
     <div class="col-lg-2" class="centrado">
         <button type="button" class="btn btn-dark" routerLink="/nuevafotoa/" *ngIf="isLogged">
-            Agregar Proyecto
+            Agregar Foto Perfil
         </button>
-
-
-        <div *ngFor="let Fotoa of fotoa" >
-
-
-            <img src="{{Fotoa.nombreE}}" class="img-fluid" id="perfil">
-
-
-        </div>
-
         <div *ngFor="let Fotoa of fotoa">
             <div *ngIf="isLogged" > 
+
+              
 
                 <button class="btn btn-light" routerLink="/editfotoa/{{Fotoa.id}}">
                     <i class="bi bi-pencil-fill"></i> EDITA</button>
 
-                    <button class="btn btn-danger" (click)="delete(Fotoa.id)">
+                    <button class="btn btn-light" (click)="delete(Fotoa.id)">
                         <i class="bi bi-trash-fill"></i> BORRAR</button>
                 
             
@@ -31,11 +23,21 @@
 
          
         </div>
+            
 
 
-        
 
-    </div>
+
+        <div *ngFor="let Fotoa of fotoa" >
+
+
+            <img src="{{Fotoa.nombreE}}" class="img-fluid" id="perfil">
+            
+
+
+        </div>
+
+      
 
 
 
