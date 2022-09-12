@@ -1,39 +1,101 @@
-<div class="container">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombreE">¿Cual cree es su mejor cualidad personal?</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE">Manejo de ingles (de 1 a 100)</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE2">Manejo de HTML5 (de 1 a 100)</label>
-                    <input type="text" class="form-control" id="descripcionE2" name="descripcionE2" [(ngModel)]="descripcionE2" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE3">Manejo de CSS (de 1 a 100)</label>
-                    <input type="text" class="form-control" id="descripcionE3" name="descripcionE3" [(ngModel)]="descripcionE3" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE4">Manejo de JAVA (de 1 a 100)</label>
-                    <input type="text" class="form-control" id="descripcionE4" name="descripcionE4" [(ngModel)]="descripcionE4" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE5">Manejo de GITHUB (de 1 a 100)</label>
-                    <input type="text" class="form-control" id="descripcionE5" name="descripcionE5" [(ngModel)]="descripcionE5" required>
-                </div>
-                <div class="form-group">
-                    <label for="descripcionE6">Manejo de grupos sociales (de 1 a 100)</label>
-                    <input type="text" class="form-control" id="descripcionE6" name="descripcionE6" [(ngModel)]="descripcionE6" required>
-                </div>
-                <button class="btn btn-primary">
-                    Agregar Aptitudes
-                </button>
-            </form>
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Foto Perfil</h2>
+                <p class="text-white-50 mb-5">Por favor, ingresar el link de su imagen</p>
+               
+
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                    <div class="form-group">
+
+
+                        <div class="form-group">
+                            <label for="nombreE">¿Cual cree es su mejor cualidad personal?</label>
+                            <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="descripcionE">Manejo de 1(de 1 a 100)</label>
+                            <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE2">Manejo de 2 (de 1 a 100)</label>
+                            <input type="text" class="form-control" id="descripcionE2" name="descripcionE2" [(ngModel)]="descripcionE2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE3">Manejo de 3 (de 1 a 100)</label>
+                            <input type="text" class="form-control" id="descripcionE3" name="descripcionE3" [(ngModel)]="descripcionE3" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE4">Manejo de 4 (de 1 a 100)</label>
+                            <input type="text" class="form-control" id="descripcionE4" name="descripcionE4" [(ngModel)]="descripcionE4" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE5">Manejo de 5 (de 1 a 100)</label>
+                            <input type="text" class="form-control" id="descripcionE5" name="descripcionE5" [(ngModel)]="descripcionE5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE6">Manejo de 6(de 1 a 100)</label>
+                            <input type="text" class="form-control" id="descripcionE6" name="descripcionE6" [(ngModel)]="descripcionE6" required>
+                        </div>
+        
+        
+        
+        
+                        <div class="form-group">
+                            <label for="descripcion7">1</label>
+                            <input type="text" class="form-control" id="descripcion7" name="descripcionE7" [(ngModel)]="descripcionE7" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE8">2</label>
+                            <input type="text" class="form-control" id="descripcionE8" name="descripcionE8" [(ngModel)]="descripcionE8" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE9">3</label>
+                            <input type="text" class="form-control" id="descripcionE9" name="descripcionE9" [(ngModel)]="descripcionE9" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE10">4</label>
+                            <input type="text" class="form-control" id="descripcionE10" name="descripcionE10" [(ngModel)]="descripcionE10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE11">5</label>
+                            <input type="text" class="form-control" id="descripcionE11" name="descripcionE11" [(ngModel)]="descripcionE11" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionE12">6</label>
+                            <input type="text" class="form-control" id="descripcionE12" name="descripcionE12" [(ngModel)]="descripcionE12" required>
+                        </div>
+                        
+                        
+
+
+
+
+
+
+
+
+                    </div>
+                  
+                    <button class="btn btn-outline-light btn-lg px-5" id="bot">
+                        Subir Foto Perfil
+                    </button>
+                </form>
+              </div>
+  
+                    
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </section>

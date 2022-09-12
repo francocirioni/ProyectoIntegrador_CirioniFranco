@@ -20,8 +20,16 @@
 
       <div *ngIf="isLogged">
         <div *ngFor="let Kys of kys">
+
+
           <button class="btn btn-light" (click)="delete(Kys.id)">
             <i class="bi bi-trash-fill"></i> BORRAR</button>
+
+
+            <td *ngIf="isLogged">
+              <button  class="btn btn-light" routerLink="/editkys/{{Kys.id}}">
+                  <i class="bi bi-pencil-fill"></i> EDITA</button>
+          </td>
 
         </div>
 
@@ -38,25 +46,68 @@
       <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
 
 
-        <circle-progress [percent]="Kys.descripcionE" [radius]="100" [imageSrc]="'../../../assets/4.png'"
-          [showImage]="true" [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
-          [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+        <circle-progress 
+        [percent]="Kys.descripcionE"
+        [radius]="100" 
+        [imageSrc]="''"
+        [showImage]="false" 
+        [title]="Kys.descripcionE7" 
+        [titleColor]="'#DC8924'"
+        [imageHeight]="50" 
+        [imageWidth]="50"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="12"
+        [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" 
+        [innerStrokeColor]="'#DC8924'" 
+        [animation]="true" 
+        [animationDuration]="1000">
         </circle-progress>
       </div>
     
 
     <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress [percent]="Kys.descripcionE2" [radius]="100" [imageSrc]="'../../../assets/1.png'" [showImage]="true"
-        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
-      </circle-progress>
+      <circle-progress 
+        [percent]="Kys.descripcionE2"
+        [radius]="100" 
+        [imageSrc]="''"
+        [showImage]="false" 
+        [title]="Kys.descripcionE8" 
+        [titleColor]="'#DC8924'"
+        [imageHeight]="50" 
+        [imageWidth]="50"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="12"
+        [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" 
+        [innerStrokeColor]="'#DC8924'" 
+        [animation]="true" 
+        [animationDuration]="1000">
+        </circle-progress>
     </div>
 
     <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress [percent]="Kys.descripcionE3" [radius]="100" [imageSrc]="'../../../assets/5.png'" [showImage]="true"
-        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
-      </circle-progress>
+
+      <circle-progress 
+        [percent]="Kys.descripcionE3"
+        [radius]="100" 
+        [imageSrc]="''"
+        [showImage]="false" 
+        [title]="Kys.descripcionE9" 
+        [titleColor]="'#DC8924'"
+        [imageHeight]="50" 
+        [imageWidth]="50"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="12"
+        [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" 
+        [innerStrokeColor]="'#DC8924'" 
+        [animation]="true" 
+        [animationDuration]="1000">
+        </circle-progress>
 
     </div>
 
@@ -68,25 +119,67 @@
   <div class="row">
 
     <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress [percent]="Kys.descripcionE4" [radius]="100" [imageSrc]="'../../../assets/3.png'" [showImage]="true"
-        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
-      </circle-progress>
+      <circle-progress 
+        [percent]="Kys.descripcionE4"
+        [radius]="100" 
+        [imageSrc]="''"
+        [showImage]="false" 
+        [title]="Kys.descripcionE10" 
+        [titleColor]="'#DC8924'"
+        [imageHeight]="50" 
+        [imageWidth]="50"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="12"
+        [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" 
+        [innerStrokeColor]="'#DC8924'" 
+        [animation]="true" 
+        [animationDuration]="1000">
+        </circle-progress>
     </div>
 
 
     <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress [percent]="Kys.descripcionE5" [radius]="100" [imageSrc]="'../../../assets/6.png'" [showImage]="true"
-        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
+      <circle-progress 
+      [percent]="Kys.descripcionE5"
+      [radius]="100" 
+      [imageSrc]="''"
+      [showImage]="false" 
+      [title]="Kys.descripcionE11" 
+      [titleColor]="'#DC8924'"
+      [imageHeight]="50" 
+      [imageWidth]="50"
+      [showUnits]="false"
+      [showSubtitle]="false"
+      [outerStrokeWidth]="12"
+      [innerStrokeWidth]="2"
+      [outerStrokeColor]="'#DC8924'" 
+      [innerStrokeColor]="'#DC8924'" 
+      [animation]="true" 
+      [animationDuration]="1000">
       </circle-progress>
     </div>
 
     <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress [percent]="Kys.descripcionE6" [radius]="100" [imageSrc]="'../../../assets/2.png'" [showImage]="true"
-        [imageHeight]="50" [imageWidth]="50" [outerStrokeWidth]="12" [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#DC8924'" [innerStrokeColor]="'#DC8924'" [animation]="true" [animationDuration]="1000">
-      </circle-progress>
+      <circle-progress 
+        [percent]="Kys.descripcionE6"
+        [radius]="100" 
+        [imageSrc]="''"
+        [showImage]="false" 
+        [title]="Kys.descripcionE12" 
+        [titleColor]="'#DC8924'"
+        [imageHeight]="50" 
+        [imageWidth]="50"
+        [showUnits]="false"
+        [showSubtitle]="false"
+        [outerStrokeWidth]="12"
+        [innerStrokeWidth]="2"
+        [outerStrokeColor]="'#DC8924'" 
+        [innerStrokeColor]="'#DC8924'" 
+        [animation]="true" 
+        [animationDuration]="1000">
+        </circle-progress>
 
     </div>
 

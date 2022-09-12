@@ -18,6 +18,12 @@ export class NewkysComponent implements OnInit {
   descripcionE4: number;
   descripcionE5: number;
   descripcionE6: number;
+  descripcionE7: string;
+  descripcionE8: string;
+  descripcionE9: string;
+  descripcionE10: string;
+  descripcionE11: string;
+  descripcionE12: string;
 
   constructor(private kysS: KysService, private router: Router) { }
 
@@ -25,7 +31,8 @@ export class NewkysComponent implements OnInit {
   }
 
   onCreate(): void{
-    const kys = new Kys(this.nombreE, this.descripcionE, this.descripcionE2, this.descripcionE3, this.descripcionE4, this.descripcionE5, this.descripcionE6);
+    const kys = new Kys(this.nombreE, this.descripcionE, this.descripcionE2, this.descripcionE3, this.descripcionE4, this.descripcionE5, this.descripcionE6
+      , this.descripcionE7, this.descripcionE8, this.descripcionE9, this.descripcionE10, this.descripcionE11, this.descripcionE12);
     this.kysS.save(kys).subscribe(
       data =>{
         alert("Educacion añadida correctamente");
