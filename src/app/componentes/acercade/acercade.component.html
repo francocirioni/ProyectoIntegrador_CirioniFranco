@@ -1,20 +1,72 @@
-<div class="row">
+<div>
+
+    <div class="col-lg-2" class="centrado">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoacercade/" *ngIf="isLogged">
+            Agregar Foto Perfil
+        </button>
+
+        
+        <div *ngFor="let Acercade of acercade">
+            <div *ngIf="isLogged" > 
+
+              
+
+                <button class="btn btn-light" routerLink="/editfotoa/{{Acercade.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDITA</button>
+
+                    <button class="btn btn-light" (click)="delete(Acercade.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                
+            
+            </div>         
+
+         
+        </div>
+            
 
    
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-        <h1><p id="nombre">{{persona.nombre}} {{persona.apellido}}</p></h1>
-        <p>Mi Titulo</p>
+   <!-- <div>
+
+
+        <div class="centrado">
+            <div *ngFor="let Acercade of acercade" >
+                <td *ngIf="isLogged">
+                    <button type="button" class="btn btn-dark" routerLink="/nuevoacercade/">
+                        Agregar Proyecto
+                    </button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button  class="btn btn-light" routerLink="/editpro/{{Acercade.id}}">
+                        <i class="bi bi-pencil-fill"></i> EDITA</button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light" (click)="delete(Acercade.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                </td>
+            </div>
+        </div>
+
+    </div>-->
+
+    <div class="row">
+
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h1>
+                <p id="nombre" *ngFor="let Acercade of acercade" >{{Acercade.nombreE}}</p>
+            </h1>
+           
+
+            <p *ngFor="let Acercade of acercade">{{Acercade.descripcionE}}</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <span>
+
+                <h1 id="acercade">Acerca de mi</h1>
+                <p *ngFor="let Acercade of acercade">{{Acercade.imagenE}}</p>
+
+            </span>
+        </div>
+
     </div>
-
-    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-        <span>
-
-            <h1 id="acercade">Acerca de mi</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro suscipit fugiat aliquid provident, blanditiis nobis cum hic ipsam laborum id quisquam earum assumenda praesentium saepe corrupti quas. Accusamus, deserunt veritatis.</p>
-
-        </span>
-    </div>
-
-
-
-</div>

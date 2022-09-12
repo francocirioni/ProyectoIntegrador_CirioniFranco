@@ -1,5 +1,5 @@
-export class Proyectos {
-[x: string]: any;
+export class Acercade {
+    [x: string]: any;
 
     id? : number;
     nombreE : string;
@@ -12,5 +12,4 @@ export class Proyectos {
         this.descripcionE = descripcionE;
         this.imagenE = imagenE;
     }
-    
 }

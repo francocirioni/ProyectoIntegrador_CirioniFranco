@@ -31,6 +31,7 @@ import { EditkysComponent } from './componentes/hys2/editkys/editkys.component';
 import { NewfotoaComponent } from './componentes/perfil/newfotoa.component';
 import { EditfotoaComponent } from './componentes/perfil/editfotoa.component';
 import { MioComponent } from './componentes/mio/mio.component';
+import { NewacercadeComponent } from './componentes/acercade/newacercade.component';
 
 
 
@@ -61,7 +62,8 @@ import { MioComponent } from './componentes/mio/mio.component';
     EditkysComponent,
     NewfotoaComponent,
     EditfotoaComponent,
-    MioComponent
+    MioComponent,
+    NewacercadeComponent
 
   ],
   imports: [

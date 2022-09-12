@@ -19,6 +19,7 @@ import { EditkysComponent } from './componentes/hys2/editkys.component';
 
 import { NewfotoaComponent } from './componentes/perfil/newfotoa.component';
 import { EditfotoaComponent } from './componentes/perfil/editfotoa.component';
+import { NewacercadeComponent } from './componentes/acercade/newacercade.component';
 
 
 
@@ -43,6 +44,8 @@ const routes: Routes = [
 
   { path: 'nuevafotoa', component: NewfotoaComponent },
   { path: 'editfotoa/:id', component: EditfotoaComponent },
+  
+  { path: 'nuevoacercade', component: NewacercadeComponent },
   
  
 
