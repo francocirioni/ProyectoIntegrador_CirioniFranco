@@ -30,6 +30,7 @@ import { NewkysComponent } from './componentes/hys2/newkys.component';
 import { EditkysComponent } from './componentes/hys2/editkys/editkys.component';
 import { NewfotoaComponent } from './componentes/perfil/newfotoa.component';
 import { EditfotoaComponent } from './componentes/perfil/editfotoa.component';
+import { MioComponent } from './componentes/mio/mio.component';
 
 
 
@@ -59,7 +60,8 @@ import { EditfotoaComponent } from './componentes/perfil/editfotoa.component';
     NewkysComponent,
     EditkysComponent,
     NewfotoaComponent,
-    EditfotoaComponent
+    EditfotoaComponent,
+    MioComponent
 
   ],
   imports: [
