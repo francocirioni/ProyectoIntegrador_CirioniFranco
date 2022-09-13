@@ -1,0 +1,208 @@
+
+
+
+<div class="fondo1">
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Editar educacion</h2>
+              <p class="text-white-50 mb-5">Por favor, rellene los campos</p>
+             
+              <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+
+
+                  
+                <div class="form-group" id="cualidad">
+                  <label for="nombreE">¿Cual cree es su mejor cualidad personal?</label>
+                  <input type="text" class="form-control" id="nombreE" name="nombreE"
+                      [(ngModel)]="kys.nombreE" required>
+              </div>
+
+
+
+            
+              <div class="hab1">
+                  <div class="form-group">
+                  <label for="descripcion7">Habilidad 1</label>
+                  <input type="text" class="form-control" id="descripcion7"
+                      name="descripcionE7" [(ngModel)]="kys.descripcionE7" required>
+                  </div>
+
+               <div class="form-group">
+                  <label for="descripcionE">Porcentaje de Manejo(numero de 1 a 100)</label>
+                  <input type="text" class="form-control" id="descripcionE"
+                      name="descripcionE" [(ngModel)]="kys.descripcionE" required>
+                </div>
+
+              </div>
+          
+     
+
+
+              <div class="hab2">
+              <div class="form-group">
+                  <label for="descripcionE8">Habilidad 2</label>
+                  <input type="text" class="form-control" id="descripcionE8"
+                      name="descripcionE8" [(ngModel)]="kys.descripcionE8" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionE2">Porcentaje de Manejo(numero de 1 a 100)</label>
+                  <input type="text" class="form-control" id="descripcionE2"
+                      name="descripcionE2" [(ngModel)]="kys.descripcionE2" required>
+              </div>
+              </div>
+
+
+
+
+              <div class="hab3">
+              <div class="form-group">
+                  <label for="descripcionE9">Habilidad 3</label>
+                  <input type="text" class="form-control" id="descripcionE9"
+                      name="descripcionE9" [(ngModel)]="kys.descripcionE9" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionE3">Porcentaje de Manejo(numero de 1 a 100)</label>
+                  <input type="text" class="form-control" id="descripcionE3"
+                      name="descripcionE3" [(ngModel)]="kys.descripcionE3" required>
+              </div>
+              </div>
+
+
+
+          <div class="hab4">
+              <div class="form-group">
+                  <label for="descripcionE10">Habilidad 4</label>
+                  <input type="text" class="form-control" id="descripcionE10"
+                      name="descripcionE10" [(ngModel)]="kys.descripcionE10" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionE4">Porcentaje de Manejo(numero de 1 a 100)</label>
+                  <input type="text" class="form-control" id="descripcionE4"
+                      name="descripcionE4" [(ngModel)]="kys.descripcionE4" required>
+              </div>
+          </div>
+
+
+
+
+
+              <div class="hab5">
+              <div class="form-group">
+                  <label for="descripcionE11">Habilidad 5</label>
+                  <input type="text" class="form-control" id="descripcionE11"
+                      name="descripcionE11" [(ngModel)]="kys.descripcionE11" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionE5">Porcentaje de Manejo(numero de 1 a 100)</label>
+                  <input type="text" class="form-control" id="descripcionE5"
+                      name="descripcionE5" [(ngModel)]="kys.descripcionE5" required>
+              </div>
+              </div>
+
+
+
+              <div class="hab6">
+              <div class="form-group">
+                  <label for="descripcionE12">Habilidad 6</label>
+                  <input type="text" class="form-control" id="descripcionE12"
+                      name="descripcionE12" [(ngModel)]="kys.descripcionE12" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionE6">Porcentaje de Manejo(numero de 1 a 100)</label>
+                  <input type="text" class="form-control" id="descripcionE6"
+                      name="descripcionE6" [(ngModel)]="kys.descripcionE6" required>
+              </div>
+          </div>
+
+
+
+
+
+
+
+                  
+                  <button class="btn btn-outline-light btn-lg px-5" id="bot">
+                      EDITAR
+                  </button>
+              </form>
+              
+              
+            </div>
+
+                  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+
+
+
+<div class="fondo2"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Editar Experiencia</h2>
+                <p class="text-white-50 mb-5">Por favor, rellene los campos</p>
+               
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreE" class="text-white-50 mb-2">Nombre de la empresa</label>
+                        <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="kys.nombreE" required>
+                    </div>
+                    
+                    
+                    <button class="btn btn-outline-light btn-lg px-5" id="bot">
+                        EDITAR
+                    </button>
+                </form>
+                
+                
+              </div>
+  
+                    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+-->
