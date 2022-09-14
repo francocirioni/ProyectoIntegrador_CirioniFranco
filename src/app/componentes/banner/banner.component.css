@@ -1,18 +1,48 @@
-div{
+.contenedor{
     width: 100%;
-    height: 170px;
+    height: 200px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    padding: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
    background-color: #F5F6F8;
    text-shadow: 1px 1px 1px #000
    
     ;
 } 
 
-.foto{
-    width: 98%;
-    height: 800%;
+
+@media screen and (min-width: 768px){
+	.img-fluid{
+    width: 100%;
+    height: 600px;   
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
 }
+
+}  
+
+
+@media screen and (max-width: 768px ){
+	.img-fluid{
+        opacity:0.003;
+        filter:alpha(opacity=40); /* For IE8 and earlier */
+      
+}
+
+}  
+
+
+
+
+
+
+
+#boton{
+
+    width: 100%;
+
+}
+
 

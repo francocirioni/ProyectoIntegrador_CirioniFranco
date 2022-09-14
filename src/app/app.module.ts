@@ -33,6 +33,7 @@ import { EditfotoaComponent } from './componentes/perfil/editfotoa.component';
 import { MioComponent } from './componentes/mio/mio.component';
 import { NewacercadeComponent } from './componentes/acercade/newacercade.component';
 import { Editkys2Component } from './componentes/hys2/editkys2.component';
+import { EditbannerComponent } from './componentes/banner/editbanner.component';
 
 
 
@@ -65,7 +66,8 @@ import { Editkys2Component } from './componentes/hys2/editkys2.component';
     EditfotoaComponent,
     MioComponent,
     NewacercadeComponent,
-    Editkys2Component
+    Editkys2Component,
+    EditbannerComponent
 
   ],
   imports: [

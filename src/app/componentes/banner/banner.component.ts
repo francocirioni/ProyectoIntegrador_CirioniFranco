@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonaService } from 'src/app/service/persona.service';
-import { persona } from 'src/app/model/persona.model';
+import { Ban } from 'src/app/model/ban';
+import { BanService } from 'src/app/service/ban.service';
 import { TokenService } from 'src/app/service/token.service';
+
 
 
 @Component({
@@ -11,28 +12,31 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class BannerComponent implements OnInit {
 
-  persona: persona = new persona ("","","");
 
-  
+  ban : Ban [] = [];
 
-  constructor(public personaService: PersonaService, private tokenService: TokenService) { }
+  constructor(private Ban: BanService, private tokenService: TokenService) { }
+ 
   isLogged = false;
 
+
   ngOnInit(): void {
+    this.cargarBan();
     if(this.tokenService.getToken()){
-      this.isLogged=true;
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarBan(): void{
+    this.Ban.lista().subscribe(
+      data =>{
+        this.ban = data;
+      }
+    )
+  }
   
-      }else{this.isLogged = false;}
-
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
-  }
-
-   onLogOut():void{
-    this.tokenService.logOut();
-    window.location.reload();
-  }
-
- 
 
 
 }

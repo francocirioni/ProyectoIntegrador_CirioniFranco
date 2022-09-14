@@ -1,6 +1,8 @@
 .row {
 
-    padding: 40px;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 60px;
     
 }
@@ -16,14 +18,14 @@ font-size: medium;
 #nombre {
     
     margin-top: 4%;
-    color:#DC8924;
+    color: #a95922;
   
 }
 
 #acercade{
     margin-top: 10px;
     
-    color: #DC8924;
+    color: #a95922;
     
   
 }

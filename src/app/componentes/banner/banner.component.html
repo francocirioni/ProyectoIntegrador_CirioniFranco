@@ -1,12 +1,48 @@
-<div>
+<div class="contenedor">
+<div >
 
 
     <!--
     <h1 *ngIf="!isLogged" > Bienvenido al Portfolio </h1>
     <h1 *ngIf="isLogged" > Edite Su Portfolio</h1> -->
+
+
+    <div *ngFor="let Ban of ban">
+        <div *ngIf="isLogged" > 
+
+          
+
+            <button class="btn btn-light" id="boton" routerLink="/editbanner/{{Ban.id}}">
+                <i class="bi bi-pencil-fill"></i> EDITAR IMAGEN BANNER</button>
+
+                   
+        
+        </div>    
+
+
+
+
+
+
+
+
+    <div *ngFor="let Ban of ban"   >
+        
+
+       
+        <img src="{{Ban.nombreE}}" class="img-fluid"  >
+        
+        
+        
+
+
+    </div>
+
     
-    <img src="{{persona.img}}" class="foto" >
+   
 
 
+
+</div>
 
 </div>
