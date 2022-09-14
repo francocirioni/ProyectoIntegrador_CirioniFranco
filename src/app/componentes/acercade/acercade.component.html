@@ -1,9 +1,11 @@
-<div>
+<div class="contenedor">
+
+
+
+<div >
 
     <div class="col-lg-2" class="centrado">
-        <button type="button" class="btn btn-dark" routerLink="/nuevoacercade/" *ngIf="isLogged">
-            Agregar Foto Perfil
-        </button>
+       
 
         
         <div *ngFor="let Acercade of acercade">
@@ -11,11 +13,10 @@
 
               
 
-                <button class="btn btn-light" routerLink="/editfotoa/{{Acercade.id}}">
-                    <i class="bi bi-pencil-fill"></i> EDITA</button>
+                <button class="btn btn-light" id="botonaso" routerLink="/editacercade/{{Acercade.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDITAR ACERCA DE MI</button>
 
-                    <button class="btn btn-light" (click)="delete(Acercade.id)">
-                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                 
                 
             
             </div>         
@@ -64,9 +65,12 @@
             <span>
 
                 <h1 id="acercade">Acerca de mi</h1>
-                <p *ngFor="let Acercade of acercade">{{Acercade.imagenE}}</p>
+                <p *ngFor="let Acercade of acercade" id="textoacercade">{{Acercade.imagenE}}</p>
 
             </span>
         </div>
 
     </div>
+
+
+</div>

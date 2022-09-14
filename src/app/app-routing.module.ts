@@ -26,6 +26,7 @@ import { NewfotoaComponent } from './componentes/perfil/newfotoa.component';
 import { EditfotoaComponent } from './componentes/perfil/editfotoa.component';
 import { NewacercadeComponent } from './componentes/acercade/newacercade.component';
 import { EditbannerComponent } from './componentes/banner/editbanner.component';
+import { EditacercadeComponent } from './componentes/acercade/editacercade.component';
 
 
 
@@ -55,6 +56,8 @@ const routes: Routes = [
   
   { path: 'nuevoacercade', component: NewacercadeComponent },
   { path: 'editbanner/:id', component: EditbannerComponent },
+
+  { path: 'editacercade/:id', component: EditacercadeComponent },
   
  
 

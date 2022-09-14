@@ -1,6 +1,11 @@
+.contenedor{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .row {
 
-    padding: 30px;
+    padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 60px;
@@ -8,11 +13,12 @@
 }
 
 div {background-color: #343434;
-text-align: center;
+
 font-family: 'Courier New', Courier, monospace;
 color:#F5F6F8;
 font-size: medium;
-
+text-align: justify;
+text-align: center;
 }
 
 #nombre {
@@ -38,6 +44,10 @@ font-size: medium;
     align-items: center;
     width: 100%;}
 
+    #botonaso{
+        width: 100%;
+    }
+   
     
 
 
