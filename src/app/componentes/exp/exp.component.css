@@ -28,9 +28,14 @@ width: 100%;
 div{background-color: #343434}
 
 h2, h3 {
-    display: inline;
     font-family: 'Courier New', Courier, monospace;
 color:#F5F6F8;
+font-size: medium;
+text-align: justify;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+max-width: 80ch
 
 }
 
@@ -40,5 +45,13 @@ color:#F5F6F8;
     
     .centrado {text-align: center;
     align-items: center;
-    width: 100%;}
+    width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;}
+
+.botones {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
     
