@@ -26,11 +26,11 @@
                         <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img  src="{{Proyectos.imagenE}} " class="img-fluid" id="fotopro"></td>
 
 
-                        <td *ngIf="isLogged" class="botones">
+                        <td *ngIf="isLogged" id="botones">
                             <button  class="btn btn-light" routerLink="/editpro/{{Proyectos.id}}">
                                 <i class="bi bi-pencil-fill"></i> EDITA</button>
                         </td>
-                        <td *ngIf="isLogged" class="botones">
+                        <td *ngIf="isLogged" id="botones">
                             <button class="btn btn-light" (click)="delete(Proyectos.id)">
                                 <i class="bi bi-trash-fill"></i> BORRAR</button>
                         </td>

@@ -58,7 +58,9 @@ width: 100%;}
     
     width: 100%;
     max-width: 500px;
-    max-height: 330px;
+    max-height: 282px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   
     
     
@@ -72,7 +74,7 @@ color:#F5F6F8;
 font-size: medium;
 text-align: justify;
 text-align: center;
-padding-top: 20px;
+padding-top: 100px;
 padding-bottom: 20px;
 max-width: 80ch;
 
@@ -92,6 +94,11 @@ padding-bottom: 20px;}
 .botones {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#botones {
+
+    padding-top: 100px;
 }
 
 
