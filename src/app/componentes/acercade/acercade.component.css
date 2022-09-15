@@ -1,6 +1,10 @@
+.con{width: 100%;
+background-color: #343434;}
+
 .contenedor{
     padding-left: 40px;
     padding-right: 40px;
+    width: 100%;
 }
 
 .row {

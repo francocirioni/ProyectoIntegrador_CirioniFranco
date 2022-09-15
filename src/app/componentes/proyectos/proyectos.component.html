@@ -13,22 +13,24 @@
         
         <div class="col-lg-12">
             <table class="table">
-                <tbody>
-                    <tr *ngFor="let Proyectos of proyectos">
-                        <td>
+                <tbody class="botones">
+
+
+                    <tr *ngFor="let Proyectos of proyectos" id="bot">
+                        <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                             <h2>{{Proyectos.nombreE}}</h2>
 
                         </td>
-                        <td>{{Proyectos.descripcionE}}</td>
+                        <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><h3>{{Proyectos.descripcionE}}</h3></td>
 
-                        <td><img  src="{{Proyectos.imagenE}} " class="img-fluid" id="fotopro"></td>
+                        <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img  src="{{Proyectos.imagenE}} " class="img-fluid" id="fotopro"></td>
 
 
-                        <td *ngIf="isLogged">
+                        <td *ngIf="isLogged" class="botones">
                             <button  class="btn btn-light" routerLink="/editpro/{{Proyectos.id}}">
                                 <i class="bi bi-pencil-fill"></i> EDITA</button>
                         </td>
-                        <td *ngIf="isLogged">
+                        <td *ngIf="isLogged" class="botones">
                             <button class="btn btn-light" (click)="delete(Proyectos.id)">
                                 <i class="bi bi-trash-fill"></i> BORRAR</button>
                         </td>

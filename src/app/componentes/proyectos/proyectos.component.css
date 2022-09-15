@@ -56,11 +56,42 @@ width: 100%;}
 
 #fotopro{
     
-    width: 200px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 330px;
   
     
     
 
+}
+
+
+h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+color:#F5F6F8;
+font-size: medium;
+text-align: justify;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+max-width: 80ch;
+
+
+}
+
+#centrado {text-align: center;
+    align-items: center;
+    width: 100%;}
+    
+    .centrado {text-align: center;
+    align-items: center;
+    width: 100%;
+padding-top: 20px;
+padding-bottom: 20px;}
+
+.botones {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
