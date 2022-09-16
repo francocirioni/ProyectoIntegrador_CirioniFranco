@@ -18,10 +18,10 @@
         <table class="table">
             <tbody class="botones">
                 <tr *ngFor="let Educacion of educacion" id="bot">
-                    <td class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <h2>{{Educacion.nombreE}}</h2>
+                    <td class="col-xs-4 col-sm-12 col-md-6 col-lg-6">
+                         <img src="{{Educacion.nombreE}}" width="200" height="120" class="logos">
                     </td>   
-                    <td class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <h3>{{Educacion.descripcionE}}</h3></td>
+                    <td class="col-xs-8 col-sm-12 col-md-6 col-lg-6"> <h3>{{Educacion.descripcionE}}</h3></td>
                     
                     
                     <td *ngIf="isLogged" class="botones">
