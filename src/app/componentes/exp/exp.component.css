@@ -1,7 +1,7 @@
 #todo {  text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    padding: 50px;
+    padding: 40px;
    background-color: #343434;}
 
 #bot{text-align: center;}
@@ -52,6 +52,10 @@ padding-bottom: 20px;}
 .botones {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+#botonaso{
+    width: 100%;
 }
 
     

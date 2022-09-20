@@ -41,9 +41,10 @@
 
 #cualidad{
     padding-bottom: 20px;
+    
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 60px;
     color: #F5F6F8;
     ;
     
@@ -62,4 +63,8 @@
     
    
 
+}
+
+#tit{
+    padding-bottom: 30px;
 }

@@ -3,7 +3,7 @@
     font-family: 'Courier New', Courier, monospace;
     color:#F5F6F8;}
 .row{
-    padding: 0px;
+    padding: 40px;
     background-color: #343434;
     text-align: center;
 }
@@ -36,9 +36,9 @@ color:#F5F6F8 ;
 
 #titulo {
     text-align: center;
-padding-top: 20px;
+padding-top: 50px;
 font-family: 'Courier New', Courier, monospace;
-color:#DC8924; ;
+color:#a95922; ;
 
     
 
@@ -123,10 +123,12 @@ padding-bottom: 20px;}
 
 #botones {
 
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
-
+#botonaso{
+    width: 100%;
+}
 
 
 
