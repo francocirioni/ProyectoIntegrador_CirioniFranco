@@ -3,6 +3,8 @@
     padding-top: 0px;
     font-family: 'Courier New', Courier, monospace;
     color:#a95922;;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
     }
 
 
@@ -39,8 +41,25 @@
 
 #cualidad{
     padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
     padding-top: 20px;
     color: #F5F6F8;
     ;
+    
 }
 
+.negro{
+
+    background-color: #252525;
+    border-radius: 10px;
+   margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+#boton{
+    width: 100%;
+    
+   
+
+}

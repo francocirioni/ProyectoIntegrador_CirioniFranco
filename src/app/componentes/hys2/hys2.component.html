@@ -1,186 +1,103 @@
 <div class="maestro">
 
+  <div class="titulo">
 
+    <h1 class="titulo"> HARD Y SOFT SKILLS </h1>
 
-  <div class="row">
-
-    <div class="titulo">
-
-      <h1 class="titulo"> HARD Y SOFT SKILLS </h1>
-
-      <div *ngFor="let Kys of kys" id="cualidad"><h3>Mi mejor cualidad es {{Kys.nombreE}}</h3></div>
-
-      <button type="button" class="btn btn-dark" routerLink="/nuevakys" *ngIf="isLogged">
-        Agregar Hard y Soft
-      </button>
-
-
-
-
-
-      <div *ngIf="isLogged">
-        <div *ngFor="let Kys of kys">
-
-
-          <button class="btn btn-light" (click)="delete(Kys.id)">
-            <i class="bi bi-trash-fill"></i> BORRAR</button>
-          <button  class="btn btn-light" routerLink="/editkys2/{{Kys.id}}">
-                  <i class="bi bi-pencil-fill"></i> EDITA</button>
-
-           
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-
-
-
-        
-      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-
-
-        <circle-progress 
-        [percent]="Kys.descripcionE"
-        [radius]="100" 
-        [imageSrc]="''"
-        [showImage]="false" 
-        [title]="Kys.descripcionE7" 
-        [titleColor]="'#a95922'"
-        [imageHeight]="50" 
-        [imageWidth]="50"
-        [showUnits]="false"
-        [showSubtitle]="false"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#a95922'" 
-        [innerStrokeColor]="'#623C32'" 
-        [animation]="true" 
-        [animationDuration]="1000">
-        </circle-progress>
-      </div>
     
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress 
-        [percent]="Kys.descripcionE2"
-        [radius]="100" 
-        [imageSrc]="''"
-        [showImage]="false" 
-        [title]="Kys.descripcionE8" 
-        [titleColor]="'#a95922'"
-        [imageHeight]="50" 
-        [imageWidth]="50"
-        [showUnits]="false"
-        [showSubtitle]="false"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#a95922'" 
-        [innerStrokeColor]="'#623C32'" 
-        [animation]="true" 
-        [animationDuration]="1000">
-        </circle-progress>
-    </div>
+  
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+    <div *ngIf="isLogged">
+      <div *ngFor="let Kys of kys">
 
-      <circle-progress 
-        [percent]="Kys.descripcionE3"
-        [radius]="100" 
-        [imageSrc]="''"
-        [showImage]="false" 
-        [title]="Kys.descripcionE9" 
-        [titleColor]="'#a95922'"
-        [imageHeight]="50" 
-        [imageWidth]="50"
-        [showUnits]="false"
-        [showSubtitle]="false"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#a95922'" 
-        [innerStrokeColor]="'#623C32'" 
-        [animation]="true" 
-        [animationDuration]="1000">
-        </circle-progress>
+
+        <button class="btn btn-light" routerLink="/editkys2/{{Kys.id}}" id="boton">
+          <i class="bi bi-pencil-fill"></i> EDITA</button>
+
+
+
+      </div>
 
     </div>
 
   </div>
 
 
+  <div class="negro">
+
+    <div *ngFor="let Kys of kys" id="cualidad">
+      <h3>Mi mejor cualidad es {{Kys.nombreE}}</h3>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
 
 
-  <div class="row" id="segundo">
-
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress 
-        [percent]="Kys.descripcionE4"
-        [radius]="100" 
-        [imageSrc]="''"
-        [showImage]="false" 
-        [title]="Kys.descripcionE10" 
-        [titleColor]="'#a95922'"
-        [imageHeight]="50" 
-        [imageWidth]="50"
-        [showUnits]="false"
-        [showSubtitle]="false"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#a95922'" 
-        [innerStrokeColor]="'#623C32'" 
-        [animation]="true" 
-        [animationDuration]="1000">
+        <circle-progress [percent]="Kys.descripcionE" [radius]="100" [imageSrc]="''" [showImage]="false"
+          [title]="Kys.descripcionE7" [titleColor]="'#a95922'" [imageHeight]="50" [imageWidth]="50" [showUnits]="false"
+          [showSubtitle]="false" [outerStrokeWidth]="12" [innerStrokeWidth]="2" [outerStrokeColor]="'#a95922'"
+          [innerStrokeColor]="'#623C32'" [animation]="true" [animationDuration]="1000">
         </circle-progress>
-    </div>
+      </div>
 
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress 
-      [percent]="Kys.descripcionE5"
-      [radius]="100" 
-      [imageSrc]="''"
-      [showImage]="false" 
-      [title]="Kys.descripcionE11" 
-      [titleColor]="'#a95922'"
-      [imageHeight]="50" 
-      [imageWidth]="50"
-      [showUnits]="false"
-      [showSubtitle]="false"
-      [outerStrokeWidth]="12"
-      [innerStrokeWidth]="2"
-      [outerStrokeColor]="'#a95922'" 
-      [innerStrokeColor]="'#623C32'" 
-      [animation]="true" 
-      [animationDuration]="1000">
-      </circle-progress>
-    </div>
+      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+        <circle-progress [percent]="Kys.descripcionE2" [radius]="100" [imageSrc]="''" [showImage]="false"
+          [title]="Kys.descripcionE8" [titleColor]="'#a95922'" [imageHeight]="50" [imageWidth]="50" [showUnits]="false"
+          [showSubtitle]="false" [outerStrokeWidth]="12" [innerStrokeWidth]="2" [outerStrokeColor]="'#a95922'"
+          [innerStrokeColor]="'#623C32'" [animation]="true" [animationDuration]="1000">
+        </circle-progress>
+      </div>
 
-    <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
-      <circle-progress 
-        [percent]="Kys.descripcionE6"
-        [radius]="100" 
-        [imageSrc]="''"
-        [showImage]="false" 
-        [title]="Kys.descripcionE12" 
-        [titleColor]="'#a95922'"
-        [imageHeight]="50" 
-        [imageWidth]="50"
-        [showUnits]="false"
-        [showSubtitle]="false"
-        [outerStrokeWidth]="12"
-        [innerStrokeWidth]="2"
-        [outerStrokeColor]="'#a95922'" 
-        [innerStrokeColor]="'#623C32'" 
-        [animation]="true" 
-        [animationDuration]="1000">
+      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+
+        <circle-progress [percent]="Kys.descripcionE3" [radius]="100" [imageSrc]="''" [showImage]="false"
+          [title]="Kys.descripcionE9" [titleColor]="'#a95922'" [imageHeight]="50" [imageWidth]="50" [showUnits]="false"
+          [showSubtitle]="false" [outerStrokeWidth]="12" [innerStrokeWidth]="2" [outerStrokeColor]="'#a95922'"
+          [innerStrokeColor]="'#623C32'" [animation]="true" [animationDuration]="1000">
         </circle-progress>
 
-    </div>
+      </div>
 
+
+    </div>
+  
+
+
+
+
+  
+    <div class="row" id="segundo">
+
+      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+        <circle-progress [percent]="Kys.descripcionE4" [radius]="100" [imageSrc]="''" [showImage]="false"
+          [title]="Kys.descripcionE10" [titleColor]="'#a95922'" [imageHeight]="50" [imageWidth]="50" [showUnits]="false"
+          [showSubtitle]="false" [outerStrokeWidth]="12" [innerStrokeWidth]="2" [outerStrokeColor]="'#a95922'"
+          [innerStrokeColor]="'#623C32'" [animation]="true" [animationDuration]="1000">
+        </circle-progress>
+      </div>
+
+
+      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+        <circle-progress [percent]="Kys.descripcionE5" [radius]="100" [imageSrc]="''" [showImage]="false"
+          [title]="Kys.descripcionE11" [titleColor]="'#a95922'" [imageHeight]="50" [imageWidth]="50" [showUnits]="false"
+          [showSubtitle]="false" [outerStrokeWidth]="12" [innerStrokeWidth]="2" [outerStrokeColor]="'#a95922'"
+          [innerStrokeColor]="'#623C32'" [animation]="true" [animationDuration]="1000">
+        </circle-progress>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4" id="cir" *ngFor="let Kys of kys">
+        <circle-progress [percent]="Kys.descripcionE6" [radius]="100" [imageSrc]="''" [showImage]="false"
+          [title]="Kys.descripcionE12" [titleColor]="'#a95922'" [imageHeight]="50" [imageWidth]="50" [showUnits]="false"
+          [showSubtitle]="false" [outerStrokeWidth]="12" [innerStrokeWidth]="2" [outerStrokeColor]="'#a95922'"
+          [innerStrokeColor]="'#623C32'" [animation]="true" [animationDuration]="1000">
+        </circle-progress>
+
+      </div>
+
+    </div>
   </div>
 
 
