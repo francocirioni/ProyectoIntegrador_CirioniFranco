@@ -1,7 +1,9 @@
 #todo{text-align: center;
     padding-top: 20px;
     font-family: 'Courier New', Courier, monospace;
-    color:#F5F6F8;}
+    color:#F5F6F8;
+
+width: 100%;}
 .row{
     padding: 40px;
     background-color: #343434;

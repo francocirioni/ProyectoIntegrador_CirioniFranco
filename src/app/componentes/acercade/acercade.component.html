@@ -1,3 +1,5 @@
+<div class="todo">
+
 <div class="con">
 
 <div class="contenedor">    
@@ -5,20 +7,16 @@
 
 
 <div >
-
     <div class="col-lg-2" class="centrado">
        
-
-        
-        <div *ngFor="let Acercade of acercade">
+       
+        <div *ngFor="let Acercade of acercade" id="falla">
             <div *ngIf="isLogged" > 
 
               
-
                 <button class="btn btn-light" id="botonaso" routerLink="/editacercade/{{Acercade.id}}">
                     <i class="bi bi-pencil-fill"></i> EDITAR ACERCA DE MI</button>
-
-                 
+              
                 
             
             </div>         
@@ -28,28 +26,6 @@
             
 
    
-   <!-- <div>
-
-
-        <div class="centrado">
-            <div *ngFor="let Acercade of acercade" >
-                <td *ngIf="isLogged">
-                    <button type="button" class="btn btn-dark" routerLink="/nuevoacercade/">
-                        Agregar Proyecto
-                    </button>
-                </td>
-                <td *ngIf="isLogged">
-                    <button  class="btn btn-light" routerLink="/editpro/{{Acercade.id}}">
-                        <i class="bi bi-pencil-fill"></i> EDITA</button>
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-light" (click)="delete(Acercade.id)">
-                        <i class="bi bi-trash-fill"></i> BORRAR</button>
-                </td>
-            </div>
-        </div>
-
-    </div>-->
 
     <div class="row">
 
@@ -76,5 +52,8 @@
 
 
 </div>
+
+</div>
+
 
 </div>
