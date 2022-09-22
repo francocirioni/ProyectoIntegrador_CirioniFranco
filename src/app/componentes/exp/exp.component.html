@@ -19,11 +19,11 @@
         <table class="table">
             <tbody class="botones">
                 <tr *ngFor="let Experiencia of expe" id="bot">
-                    <td class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                        
                         <img src="{{Experiencia.nombreE}}"  width="200" height="120" class="logos">
                     </td>   
-                    <td class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <h3>{{Experiencia.descripcionE}}</h3></td>
+                    <td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <h3>{{Experiencia.descripcionE}}</h3></td>
                     
                     
                     <td *ngIf="isLogged" class="botones">
@@ -34,8 +34,13 @@
                         <button class="btn btn-light" (click)="delete(Experiencia.id)">
                             <i class="bi bi-trash-fill"></i> BORRAR</button>
                     </td>
+                   
+                      
                 </tr>
+                
             </tbody>
+
+           
         </table>
     </div>
 

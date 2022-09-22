@@ -64,4 +64,11 @@ padding-bottom: 20px;}
     width: 100%;
 }
 
+
+@media (max-width: 600px){
+    .logos{    
+        width: 0px;
+       
+   
+   }    }
     
