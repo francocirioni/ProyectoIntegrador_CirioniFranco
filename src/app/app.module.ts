@@ -35,6 +35,7 @@ import { NewacercadeComponent } from './componentes/acercade/newacercade.compone
 import { Editkys2Component } from './componentes/hys2/editkys2.component';
 import { EditbannerComponent } from './componentes/banner/editbanner.component';
 import { EditacercadeComponent } from './componentes/acercade/editacercade.component';
+import { EditredesComponent } from './componentes/logoarg/editredes.component';
 
 
 
@@ -69,7 +70,8 @@ import { EditacercadeComponent } from './componentes/acercade/editacercade.compo
     NewacercadeComponent,
     Editkys2Component,
     EditbannerComponent,
-    EditacercadeComponent
+    EditacercadeComponent,
+    EditredesComponent
 
   ],
   imports: [
