@@ -5,9 +5,12 @@
             <div class="logo"><img src="../../../assets/Aplogo2.png" alt="" id="logoap"></div>
             <div class="social" *ngFor="let Redes of red">
 
-                <button  type="button" class="btn btn-dark" routerLink="/editredes/{{Redes.id}}" *ngIf="isLogged" id="botonaso">
-                    redes
+                <button  type="button" class="btn btn-light" routerLink="/editredes/{{Redes.id}}" *ngIf="isLogged" id="botonaso"><i class="bi bi-pencil-fill"></i>
+                    EDITAR REDES
                 </button>
+
+               
+
                 <a *ngFor="let Redes of red" href="{{Redes.nombreE}}"><img src="../../../assets/face2.png" alt="" id="face"></a>
                 <a *ngFor="let Redes of red" href="{{Redes.descripcionE}}"><img src="../../../assets/git2.png" alt="" id="git"></a>
                 <a *ngFor="let Redes of red" href="{{Redes.descripcionE2}}"><img src="../../../assets/insta2.png" alt="" id="insta"></a>

@@ -2,7 +2,7 @@
     <h1 id="color">EDUCACIÓN</h1>
     <div class="col-lg-2" class="centrado">
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged" id="botonaso" >
-            Agregar Educacion
+            AGREGAR EDUCACIÓN
         </button>
 
 
@@ -30,13 +30,15 @@
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
                     </td>
                     <td *ngIf="isLogged" class="botones">
-                        <button class="btn btn-light" (click)="delete(Educacion.id)">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
                             <i class="bi bi-trash-fill"></i> BORRAR</button>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+
+
 
 </div>
 

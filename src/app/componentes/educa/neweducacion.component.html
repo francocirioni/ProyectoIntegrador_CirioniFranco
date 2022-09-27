@@ -31,26 +31,30 @@
   
               <div class="mb-md-5 mt-md-4 pb-5">
   
-                <h2 class="fw-bold mb-2 text-uppercase">Agregar educacion</h2>
+                <h2 class="fw-bold mb-2 text-uppercase">Agregar EDUCACIÓN</h2>
                 <p class="text-white-50 mb-5">Por favor, rellene los campos</p>
                
                 <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                     <div class="form-group">
-                        <label for="nombreE" class="text-white-50 mb-2" >Lugar de Estudio</label>
+                        <label for="nombreE" class="text-white-50 mb-2" >URL Logo de institución</label>
                         <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
                     </div>
                     <div class="form-group">
-                        <label for="descripcionE" class="text-white-50 mb-2 mt-2" >Titulo conseguido o en curso</label>
+                        <label for="descripcionE" class="text-white-50 mb-2 mt-2" >Título conseguido o en curso</label>
                         <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                     </div>
                     
                     <button class="btn btn-outline-light btn-lg px-5" id="bot">
-                        AGREGAR
+                        AGREGAR 
                     </button>
                 </form>
                 
                 
               </div>
+
+              <p>Se recomienda usar <a href="https://postimages.org/">https://postimages.org/</a></p>    
+<p>como servidor para subir su imagen</p> 
+
   
                     
             </div>

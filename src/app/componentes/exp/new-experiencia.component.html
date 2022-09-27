@@ -36,22 +36,24 @@
                
                 <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                     <div class="form-group">
-                        <label for="nombreE" class="text-white-50 mb-2" >Lugar de Trabajo</label>
+                        <label for="nombreE" class="text-white-50 mb-2" >URL Logo de Empresa</label>
                         <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
                     </div>
                     <div class="form-group">
-                        <label for="descripcionE" class="text-white-50 mb-2 mt-2" >Descripcion de la tarea</label>
+                        <label for="descripcionE" class="text-white-50 mb-2 mt-2" >Descripción de la tarea</label>
                         <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                     </div>
                     
                     <button class="btn btn-outline-light btn-lg px-5" id="bot">
-                        AGREGAR
+                        AGREGAR EXPERIENCIA
                     </button>
                 </form>
                 
                 
               </div>
-  
+
+              <p>Se recomienda usar <a href="https://postimages.org/">https://postimages.org/</a></p>  
+              <p>como servidor para subir su imagen</p>  
                     
             </div>
           </div>
