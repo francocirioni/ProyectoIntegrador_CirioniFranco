@@ -9,7 +9,7 @@ import { Redes } from '../model/redes';
   providedIn: 'root'
 })
 export class RedesService {
-  expURL = 'http://localhost:8080/redes/';
+  expURL = 'https://mibackhereku.herokuapp.com/redes/';
 
   constructor(private httpClient: HttpClient) { }
 

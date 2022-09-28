@@ -8,7 +8,7 @@ import { Ban } from '../model/ban';
 })
 export class BanService {
 
-  URL = 'http://localhost:8080/ban/';
+  URL = 'https://mibackhereku.herokuapp.com/ban/';
 
   constructor(private httpClient : HttpClient) { }
 

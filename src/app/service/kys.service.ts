@@ -8,7 +8,7 @@ import { Kys } from '../model/kys';
 })
 export class KysService {
 
-  URL = 'http://localhost:8080/kys/';
+  URL = 'https://mibackhereku.herokuapp.com/kys/';
 
   constructor(private httpClient : HttpClient) { }
 

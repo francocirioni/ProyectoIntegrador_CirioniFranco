@@ -8,7 +8,7 @@ import { Fotopro } from '../model/fotopro';
 })
 export class FotoproService {
 
-  URL = 'http://localhost:8080/fotopro/';
+  URL = 'https://mibackhereku.herokuapp.com/fotopro/';
 
   constructor(private httpClient : HttpClient) { }
 

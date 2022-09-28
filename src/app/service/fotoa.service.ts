@@ -8,7 +8,7 @@ import { Fotoa } from '../model/fotoa';
 })
 export class FotoaService {
 
-  URL = 'http://localhost:8080/fotoa/';
+  URL = 'https://mibackhereku.herokuapp.com/fotoa/';
 
   constructor(private httpClient : HttpClient) { }
 
